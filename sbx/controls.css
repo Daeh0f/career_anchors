@@ -1,0 +1,28 @@
+.attr_control {
+  border: none;
+  border-radius: 2px;
+  height: 4%;
+  width: 3%;
+  position: relative;
+  z-index: 1;
+}
+
+.inc {
+  background-color: blue;
+  color: white;
+}
+
+.dec {
+  background-color: red;
+  color: white;
+}
+
+.dec:hover {
+  cursor: pointer;
+  border: 2px solid goldenrod;
+}
+
+.inc:hover {
+  cursor: pointer;
+  border: 2px solid goldenrod;
+}

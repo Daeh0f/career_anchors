@@ -1,0 +1,53 @@
+.attr_label{
+  font-family: monospace;
+  font-size: 20pt;
+}
+
+.attr_help {
+  display: inline-block;
+  font-weight: bold;
+  position: relative;
+  font-size: 1rem;
+
+  border: 1px solid;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.attr_info {
+  visibility: hidden;
+  position: absolute;
+
+  width: max-content;
+  z-index: 10;
+
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  
+  font-size: 1rem;
+}
+
+.attr_help:hover>.attr_info {
+  visibility: visible;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border:solid;
+  margin: 1px; */
+}
+
+.attribute {
+  /* border:1px #ccc solid; */
+  padding: 8pt;
+  margin: 1px;
+  font-size: 16pt;
+}

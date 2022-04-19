@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="controls.css" />
+    <link rel="stylesheet" type="text/css" href="points.css" />
+
+    <title>Career Anchors</title>
+
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="points">Available points: </div>
+      <div class="points attribute" id="skillpoints">12</div>
+    </div>
+    
+    <div class="container">
+      <div class="attr_label">MGT</div>
+      <div class="attr_help">
+        ?
+        <div class="attr_info">
+          General Managerial Competence -  <br />
+          people with high scores here want to manage and lead others.  <br />
+          They seek responsibility and accountability and <br />
+          the challenge of solving problems and working through others.  <br />
+          They seek career steps that help them progress to more senior roles  <br />
+          where they can have broader responsibility and more generalist,  <br />
+          less technical accountabilities.  <br />
+          Ideally they seek to manage cross-functional teams. <br />
+        </div>
+      </div>
+      <button class="dec attr_control">-</button>
+      <div id="mgt" class="attribute">1</div>
+      <button class="inc attr_control">+</button>
+    </div>
+    <div class="container">
+      <div class="attr_label">TEC</div> 
+      <div class="attr_help">
+        ?
+        <div class="attr_info">
+          Technical and Functional Competence - <br />
+          people with high scores here like to be really good at specific things,<br />
+          to be experts and have specialist knowledge. <br />
+          They derive satisfaction from facing challenges related to their skills, <br />
+          doing things others can’t do and being seen as a specialist. <br />
+          They’re not usually interested in managing others, <br />
+          particularly outside of their specialist areas.<br />
+        </div>
+      </div>
+      <button class="dec attr_control">-</button>
+      <div id="tec" class="attribute">1</div>
+      <button class="inc attr_control">+</button>
+    </div>
+    <div class="container">
+      <div class="attr_label">IND</div>
+      <div class="attr_help">
+        ?
+        <div class="attr_info">
+          Autonomy / Independence -<br />
+          people with high scores here value having control and freedom over how they work. <br />
+          They value making their own decisions and doing things their own way. <br />
+          These people seek flexibility and freedom in their careers and <br />
+          may turn down the opportunity to progress <br />
+          if they feel these core requirements are at risk. <br />
+          They often like to work alone and may seek to run their own business to ensure autonomy.<br />
+        </div>
+      </div>
+      <button class="dec attr_control">-</button>
+      <div id="ind" class="attribute">1</div>
+      <button class="inc attr_control">+</button>
+    </div>
+    <div class="container">
+      <div class="attr_label">SEC</div>
+      <div class="attr_help">
+        ?
+        <div class="attr_info">
+          Security / Stability -<br />
+          People with high scores here value certainty and seek to avoid risk <br />
+          in relation to their careers. <br />
+          They often value security over the longevity of their role and <br />
+          their salary and associated benefits such as pensions. <br />
+          They may also seek stability over their job’s demands, hours, <br />
+          and broader team structures. <br />
+          Individuals who value security and <br />
+          stability may turn down risky promotions for certainty in a current role.<br />
+        </div>
+      </div>
+      <button class="dec attr_control">-</button>
+      <div id="sec" class="attribute">1</div>
+      <button class="inc attr_control">+</button>
+    </div>
+    <div class="container">
+      <div class="attr_label">SRV</div>
+      <div class="attr_help">
+        ?
+        <div class="attr_info">
+          Service / Dedication to a Cause - <br />
+          People with high scores here often value helping others very highly. <br />
+          They often derive more fulfillment from their roles through helping others.
+          They more oriented to the value of their work than to the actual talents <br />
+          or areas of competence involved.. <br />
+          Individuals drawn to service or dedication to a cause roles may wish to work <br />
+          in charitable or public sector organizations(education, healthcare, science), <br />
+          or in “people” focused functions such as Human Resources.<br />
+        </div>
+      </div>
+      <button class="dec attr_control">-</button>
+      <div id="srv" class="attribute">1</div>
+      <button class="inc attr_control">+</button>
+    </div>
+    <div class="container">
+      <div class="attr_label">CLG</div>
+      <div class="attr_help">
+        ?
+        <div class="attr_info">
+          Pure Challenge - <br />
+          People with high scores here may be somewhat agnostic about exactly what they do, <br />
+          as long as there are big problems to solve and challenges to overcome. <br />
+          They often seek the stimulation that comes with difficult challenges <br />
+          and may get bored easily. They may also have varied careers as they change roles <br />
+          looking for new problems to solve and challenges to overcome. <br />
+        </div>
+      </div>
+      <button class="dec attr_control">-</button>
+      <div id="clg" class="attribute">1</div>
+      <button class="inc attr_control">+</button>
+    </div>
+    <div class="container">
+      <div class="attr_label">OWN</div>
+      <div class="attr_help">
+        ?
+        <div class="attr_info">
+          Entrepreneurial Creativity - <br />
+          People with high scores here seek the cut and thrust, <br />
+          creativity and ownership of running their own business. <br />
+          They often value pace, variety and challenge and can get bored easily. <br />
+          While they want to run their own business, <br />
+          they often differ from those seeking autonomy and <br />
+          independence in that their drivers are different and <br />
+          they often want to collaborate and share their workloads.<br />
+        </div>
+      </div>
+      <button class="dec attr_control">-</button>
+      <div id="own" class="attribute">1</div>
+      <button class="inc attr_control">+</button>
+    </div>
+    <div class="container">
+      <div class="attr_label">LFS</div>
+      <div class="attr_help">
+        ?
+        <div class="attr_info">
+          Lifestyle Integration - <br />
+          people with high scores here often value their lifestyles more than their careers. <br />
+          They often “work to live” as opposed to “live to work” and <br />
+          their “work-life-balance” is highly important to them. <br />
+          They will often seek flexibility in their work to let them achieve their personal life goals, <br />
+          and are often willing to sacrifice career outcomes to retain a better lifestyle <br />
+          (for example turning down a promotion that would mean more hours).<br />
+        </div>
+      </div>
+      <button class="dec attr_control">-</button>
+      <div id="lfs" class="attribute">1</div>
+      <button class="inc attr_control">+</button>
+    </div>
+     
+  </body>
+</html>
